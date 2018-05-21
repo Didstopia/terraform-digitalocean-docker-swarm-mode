@@ -29,3 +29,13 @@ output "worker_token" {
   description = "The Docker Swarm worker join token"
   sensitive   = true
 }
+
+output "manager_dropled_ids" {
+  value       = ["${module.managers.droplet_ids}"]
+  description = "The manager droplet ids"
+}
+
+output "worker_dropled_ids" {
+  value       = ["${module.workers.droplet_ids}"]
+  description = "The worker droplet ids"
+}
