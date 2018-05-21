@@ -30,12 +30,12 @@ output "worker_token" {
   sensitive   = true
 }
 
-output "manager_dropled_ids" {
+output "manager_droplet_ids" {
   value       = ["${module.managers.droplet_ids}"]
   description = "The manager droplet ids"
 }
 
-output "worker_dropled_ids" {
+output "worker_droplet_ids" {
   value       = ["${module.workers.droplet_ids}"]
   description = "The worker droplet ids"
 }
