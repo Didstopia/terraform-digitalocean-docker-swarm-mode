@@ -1,5 +1,5 @@
 module "managers" {
-  source   = "github.com/thojkooi/terraform-digitalocean-swarm-managers?ref=v0.1.2"
+  source   = "github.com/Didstopia/terraform-digitalocean-swarm-managers"
   do_token = "${var.do_token}"
 
   image  = "${var.manager_image}"
